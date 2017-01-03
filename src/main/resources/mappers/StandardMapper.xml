@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deposit.dao.StandardDao">
+
+	<resultMap type="Standard" id="StandardResult">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="exchange" column="exchange"/>
+		<result property="standard" column="standard"/>
+		<result property="unit" column="unit"/>
+	</resultMap>
+	
+	<insert id="add" parameterType="Standard">
+		insert into t_standard(id, name, exchange, standard, unit, time) values(null, #{name}, #{exchange}, #{standard}, #{unit}, #{time})
+	</insert>
+	
+	<delete id="deleteNotToday" parameterType="Date">
+		delete from t_standard where time &lt; #{time}
+	</delete>
+	
+	<select id="getExchangeList" parameterType="String" resultType="String">
+		select distinct exchange from t_standard
+	</select>
+	
+	<select id="getPropertyByParam" parameterType="Map" resultType="String">
+		select distinct ${property} from t_standard where exchange = #{exchange}
+	</select>
+	
+	<select id="get" parameterType="Standard" resultType="Standard">
+		select * from t_standard where exchange = #{exchange} and name = #{name}
+	</select>
+
+</mapper> 

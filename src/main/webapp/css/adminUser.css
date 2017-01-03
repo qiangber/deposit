@@ -1,0 +1,157 @@
+
+.user table {
+solid:1px solid #fff;border-collapse:collapse;font-size:20px;margin:2px 0px;width:740px;
+}
+#tertable {
+	width:700px;
+	float:left;
+	margin:5px;
+	background:#5af;
+	font-size:12px;
+	line-height:20px;
+	list-style:none;
+}
+.user table th {
+	padding:5px;text-align:center;border:1px solid #fff;font-size:16px;font-family:'ºÚÌå';color:#fff;background:#0f5faf;
+}
+.user table td {
+	padding:5px;text-align:center;border:1px solid #fff;font-size:14px;width:auto
+}
+#edit a{
+	display:inline-block;
+	float:left;
+	width:40px;
+	height:25px;
+	margin-left:5px;
+	background:url(../img/edit.png) no-repeat;
+}
+
+#delete a{
+	display:inline-block;
+	width:40px;
+	height:25px;
+	float:left;
+	margin-left:5px;
+	background:url(../img/delete.png) no-repeat 
+}
+
+.user .btncontain {
+	width:712;
+	float:left;
+	margin-top:8px;
+	margin-left:5px;
+}
+
+
+.user .adduser {
+	width:658px;
+	float:left;
+	margin-bottom:12px;
+	font-size:12px;
+}
+.pass {
+	width:350px;
+	height:275px;
+	margin-top:12px;
+	/* margin-left: 35px; */
+	padding-left:35px;
+	padding-top:30px;
+	background:url(../img/pass_bg.png) no-repeat;
+	background-size:350px 290px;
+}
+
+.edituser{
+	width:350px;
+	height:380px;
+	margin-top:12px;
+	margin-left: 35px;
+	padding-left:35px;
+	padding-top:30px;
+	background:url(../img/edituser_bg.png) no-repeat;
+	background-size:350px 390px;
+}
+
+.pass .btncontain {
+	width:302px;
+	float:left;
+	margin-top:4px;
+}
+.pass .item {
+	width:300px;
+	float:left;
+	margin-bottom:12px;
+	font-size:12px;
+}
+.pass .item .title {
+	width:60px;
+	float:left;
+	padding-right:6px;
+	text-align:left;
+	line-height:22px;
+}
+.pass .item input {
+	width:160px;
+	height:22px;
+	float:left;
+}
+.pass .item label {
+	width:300px;
+	padding-left:76px;
+	line-height:18px;
+	text-align: left;
+	float:left;
+}
+.pass .item label input {
+	width:15px;
+	height:15px;
+	float:left;
+}
+.pass .adduserbtn {
+	width:82px;
+	float:left;
+	margin-top:8px;
+	margin-bottom:33px;
+	margin-right:8px;
+}
+.edituser .btncontain {
+	width:302px;
+	float:left;
+	margin-top:4px;
+}
+.edituser .item {
+	width:300px;
+	float:left;
+	margin-bottom:12px;
+	font-size:12px;
+}
+.edituser .item .title {
+	width:60px;
+	float:left;
+	padding-right:6px;
+	text-align:left;
+	line-height:22px;
+}
+.edituser .item input {
+	width:160px;
+	height:22px;
+	float:left;
+}
+.edituser .item label {
+	width:300px;
+	padding-left:76px;
+	line-height:18px;
+	text-align: left;
+	float:left;
+}
+.edituser .item label input {
+	width:15px;
+	height:15px;
+	float:left;
+}
+.edituser .adduserbtn {
+	width:82px;
+	float:left;
+	margin-top:8px;
+	margin-bottom:33px;
+	margin-right:8px;
+}
